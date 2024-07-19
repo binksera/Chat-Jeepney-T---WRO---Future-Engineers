@@ -38,6 +38,9 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
 ![3D Model](https://github.com/binksera/Chat-JeepneyT---WRO---Future-Engineers/blob/d812ea15e94702fd0156b1bdf8a4ae3c3b360e42/v-photos/3D%20Model.png)
 
+**Physical Model**
+![Physical Model]
+
 ## Materials (Components)
 
 **Key Components of the Chat-Jeepney T:**   
