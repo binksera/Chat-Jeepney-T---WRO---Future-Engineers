@@ -1,5 +1,4 @@
 Video
 ====
 
-This directory must contain the video.md file with a URL to YouTube (should be either public or accessible by link) showing the vehicle driving autonomously.
-That part of the video where driving demonstration exists must be at least 30 seconds in length.
+[A video entry for WRO 2024 on the Future Engineers Category](https://youtu.be/T9l6r4ce5zs?si=ezeFGp76A3dV6C4t).
