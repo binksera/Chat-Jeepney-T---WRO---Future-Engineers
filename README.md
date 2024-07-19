@@ -42,12 +42,11 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
 ![Physical Model](https://github.com/binksera/Chat-JeepneyT---WRO---Future-Engineers/blob/7cddefb7fb6671cce8aeb29278721eead191f83a/v-photos/Actual%20Model.png)
 
-## Materials (Components)
+**Code**
 
-**Key Components of the Chat-Jeepney T:**   
-- f
-  -
+Shown here is the block code in aisteam usede for the obstacle challenge.
 
+![Code](https://github.com/binksera/Chat-JeepneyT---WRO---Future-Engineers/blob/f956d6f74c6b82b01c7a1fdbffdf4c1f306f5505/src/AI%20Steam%20Code.png)
 
 
 
