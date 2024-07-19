@@ -28,6 +28,10 @@ _This part must be filled by participants with the technical clarifications abou
 
 **Funny Photo**
 
+**Youtube Video**
+
+https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
+
 ## Robot Design
 
 **3D Model**
