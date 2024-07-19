@@ -36,6 +36,7 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
 **3D Model**
 
+[3D Model]()
 ## Materials (Components)
 
 **Key Components of the Chat-Jeepney T:**   
