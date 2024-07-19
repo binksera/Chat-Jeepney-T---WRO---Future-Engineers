@@ -17,6 +17,31 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
 _This part must be filled by participants with the technical clarifications about the code: which modules the code consists of, how they are related to the electromechanical components of the vehicle, and what is the process to build/compile/upload the code to the vehicle’s controllers._
 
+## Team Details
+- **Coder:** Jacob Acuna
+- **Builder:** John Ehmar Hermosa
+- **Researcher:** Rei Nathaniel Ricamunda
+
+## Team Photo
+
+**Official Photo**
+
+**Funny Photo**
+
+## Robot Design
+
+**3D Model**
+
+## Materials (Components)
+
+**Key Components of the Chat-Jeepney T:**   
+- f
+  -
+
+
+
+
+
 ## How to prepare the repo based on the template
 
 _Remove this section before the first commit to the repository_
