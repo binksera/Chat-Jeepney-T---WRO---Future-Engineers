@@ -45,7 +45,7 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
 ## Materials (Components)
 
-**Key Components of the DEElubyo Bot:**   
+**Key Components of the Chat Jeepney T:**   
 
 
 **Chassis:** 
