@@ -48,59 +48,57 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 **Key Components of the Chat Jeepney T:**   
 
 
-**Chassis:** 
+**Connectors:**
 
-Holds multiple parts of the robot together, providing a sturdy framework that ensures the structural integrity of the entire vehicle.
+Establish reliable electrical connections between the microcontroller and various electronic components/modules, ensuring efficient signal and power transmission.
 
-![chassis](X)
+**Breadboard:**
 
-**Differential (Steering Mechanism):** 
+Allows temporary construction of circuits without soldering, facilitating easy testing and modification of designs.
 
-Responsible for turning the front wheels, allowing the robot to steer and navigate through its environment. This mechanism enables the robot to make precise turns and maneuver around obstacles effectively.
+**Battery Holder:**
 
-![diff](X)
+Secures the battery in place, ensuring stable and consistent power supply to the robot.
 
-**Servo Motor:** 
+**Ultrasonic Sensor:**
 
-Connected to the steering mechanism, it controls its movement. By adjusting the angle of the front wheels, the servo motor allows the robot to change direction as needed.
+Detects and measures the distance to obstacles by emitting ultrasonic waves and calculating their return time, helping the robot navigate safely.
 
-![servo](X)
+**Sensor Shield:**
 
-**DC Motor:** 
+Simplifies the connection of multiple sensors to the microcontroller, providing labeled ports for secure and organized wiring.
 
-Drives the rear wheels, providing the necessary power to propel the robot forward. This motor ensures that the robot can move at a consistent speed and handle various terrains.
+**Servo Motor:**
 
-![dc](X)
+Controls the steering mechanism for precise adjustments to the front wheels' angle, enabling accurate directional changes.
 
-**Wheels:** 
+**DC Motor:**
 
-Enable the robot to move. The front wheels are steered by the differential and servo motor, while the rear wheels are driven by the DC motor.
+Drives the rear wheels, providing necessary torque and speed for the robot's movement.
 
-![wheels](X)
+**Motor Driver:**
 
-**Camera:** 
+Manages the DC motors' speed and direction, ensuring efficient and accurate response to the microcontroller's commands.
 
-Serves as the robot's eyes, identifying and avoiding obstacles in its path. By processing visual data, the camera helps the robot detect red and green obstacles, enabling it to make informed decisions to avoid collisions.
+**IR Sensors:**
 
-![camera](X)
+Detect specific colors on the mat by measuring reflected infrared light, allowing the robot to identify and respond to red and green obstacles.
 
-**Microcontroller:** 
+**Buck Converter:**
 
-Acts as the main brain of the robot, processing data from the camera and other sensors. It makes decisions based on this data and sends commands to the motors and steering mechanism, ensuring smooth and safe operation.
+Steps down the voltage from the battery to suitable levels for the microcontroller and other components, ensuring proper power distribution.
 
-![mcont](X)
+**Wheels:**
 
-**Battery:** 
+Enable the robot's movement, driven by the DC motors and steered by the servo motor.
 
-The primary power source for the robot, supplying energy to all its modules. It ensures that the robot has the necessary power to operate its motors, camera, microcontroller, and other components effectively.
+**Acrylic Chassis:**
 
-![batt](X)
+Provides a sturdy and lightweight frame to hold all the components together securely.
 
-**Integrated Gray Scale Sensor:**
+**Battery:**
 
-Identifies colors on the mat, serving as an additional tool for distinguishing between different shades and colors to enhance obstacle detection and navigation.
-
-![ir](X)
+Supplies power to all the robot’s components, ensuring consistent operation.
 
 **Code**
 
