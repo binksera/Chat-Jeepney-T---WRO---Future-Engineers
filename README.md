@@ -40,7 +40,7 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
 **Physical Model**
 
-![Physical Model](https://github.com/binksera/Chat-JeepneyT---WRO---Future-Engineers/blob/7cddefb7fb6671cce8aeb29278721eead191f83a/v-photos/Actual%20Model.png)
+![Physical Model](https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/c2eda4c8607d536d38d80eeb2229d9125a565d05/v-photos/Physical%20Model.png)
 
 
 ## Materials (Components)
