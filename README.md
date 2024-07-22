@@ -17,12 +17,12 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
 _AIsteam and Arduino._
 
-## Team Details
+### Team Details
 - **Coder:** Jacob Acuna
 - **Builder:** John Ehmar Hermosa
 - **Researcher:** Rei Nathaniel Ricamunda
 
-## Team Photo
+### Team Photo
 
 **Official Photo**
 
