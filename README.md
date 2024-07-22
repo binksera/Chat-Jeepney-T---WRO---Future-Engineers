@@ -155,5 +155,11 @@ The 4-wheeled autonomous vehicle is powered by a Lithium Battery Module, which p
 - Brackets and mounts to secure components to the LEGO chassis.
 
 
+**Obstacle Management**
+
+The strategy for obstacle management involves using a combination of sensors and algorithms to navigate and overcome obstacles. The vehicle utilizes the HC-SR04 Ultrasonic Sensor for distance measurement, the MPU6050 Gyro Breakout for orientation and balance, and the DFRobot Huskylens for advanced object recognition. 
+
+
+
 
 This site was built using [GitHub Pages](https://pages.github.com/).
