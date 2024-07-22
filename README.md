@@ -50,39 +50,39 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
 **Lego Chassis**
 
-The Lego Chassis will serve as the robot's body, providing a sturdy and lightweight frame to house all other components. Its compatibility with LEGO construction systems makes it easy to assemble and modify. This chassis will support the motor modules, battery, Arduino board, sensors, and other electronics, ensuring that all parts are securely mounted and easily accessible for maintenance and upgrades.
+The _Lego Chassis_ will serve as the robot's body, providing a sturdy and lightweight frame to house all other components. Its compatibility with LEGO construction systems makes it easy to assemble and modify. This chassis will support the motor modules, battery, Arduino board, sensors, and other electronics, ensuring that all parts are securely mounted and easily accessible for maintenance and upgrades.
 
 **Lithium Battery Module**
 
-The Lithium Battery Module will supply power to the entire robot. With an output voltage of 7.4V and a capacity of 1100mAh, it will provide a sufficient energy source for the motors and electronic components. The maximum discharge rate of 3C ensures that the battery can deliver high current when needed. The rated charging voltage of 8.4V and current of 1A allow for efficient recharging. The DC5.5 input and output ports facilitate easy connections, and multiple batteries can be connected in parallel to extend operating time.
+The _Lithium Battery Module_ will supply power to the entire robot. With an output voltage of 7.4V and a capacity of 1100mAh, it will provide a sufficient energy source for the motors and electronic components. The maximum discharge rate of 3C ensures that the battery can deliver high current when needed. The rated charging voltage of 8.4V and current of 1A allow for efficient recharging. The DC5.5 input and output ports facilitate easy connections, and multiple batteries can be connected in parallel to extend operating time.
 
 **Ordinary Motor Module**
 
-The Ordinary Motor Module will be used for driving the wheels of the robot. These motors, operating at 7.4V, will provide the necessary torque and speed to move the robot. The motors will be controlled by the Arduino Uno R3, which will send signals to adjust the speed and direction based on sensor inputs and pre-programmed instructions.
+The _Ordinary Motor Module_ will be used for driving the wheels of the robot. These motors, operating at 7.4V, will provide the necessary torque and speed to move the robot. The motors will be controlled by the Arduino Uno R3, which will send signals to adjust the speed and direction based on sensor inputs and pre-programmed instructions.
 
 **Simulated Steering Gear Module**
 
-The Simulated Steering Gear Module will be used for steering and controlling the orientation of the robot. With a working voltage of 5V and a torque of 1.5kgf.cm, it will be capable of handling the physical demands of steering. The angle range of 0~180° and speed of 0.12 seconds/60° will provide precise and responsive control. Its compatibility with the LEGO construction system ensures easy integration with the Lego Chassis.
+The _Simulated Steering Gear Module_ will be used for steering and controlling the orientation of the robot. With a working voltage of 5V and a torque of 1.5kgf.cm, it will be capable of handling the physical demands of steering. The angle range of 0~180° and speed of 0.12 seconds/60° will provide precise and responsive control. Its compatibility with the LEGO construction system ensures easy integration with the Lego Chassis.
 
 **Arduino Uno R3**
 
-The Arduino Uno R3 will act as the central controller for the robot. It will interface with all sensors and actuators, processing input data and executing control algorithms. The Arduino will read data from the ultrasonic sensor, gyro breakout, and Huskylens, and use this information to make real-time decisions about navigation, obstacle avoidance, and movement.
+The _Arduino Uno R3_ will act as the central controller for the robot. It will interface with all sensors and actuators, processing input data and executing control algorithms. The Arduino will read data from the ultrasonic sensor, gyro breakout, and Huskylens, and use this information to make real-time decisions about navigation, obstacle avoidance, and movement.
 
 **HC-SR04 Ultrasonic Sensor**
 
-The HC-SR04 Ultrasonic Sensor will be used for distance measurement and obstacle detection. Operating at 5V DC and consuming 15mA, it emits ultrasonic waves and measures the time it takes for the echo to return. With a range of 2cm to 400cm and an accuracy of 3mm, it will provide precise distance measurements, allowing the robot to detect and avoid obstacles. The measuring angle of <15° ensures a focused detection area, and the sensor's dimensions (45 x 20 x 15mm) make it easy to mount on the Lego Chassis.
+The _HC-SR04 Ultrasonic Sensor_ will be used for distance measurement and obstacle detection. Operating at 5V DC and consuming 15mA, it emits ultrasonic waves and measures the time it takes for the echo to return. With a range of 2cm to 400cm and an accuracy of 3mm, it will provide precise distance measurements, allowing the robot to detect and avoid obstacles. The measuring angle of <15° ensures a focused detection area, and the sensor's dimensions (45 x 20 x 15mm) make it easy to mount on the Lego Chassis.
 
 **MPU6050 Gyro Breakout**
 
-The MPU6050 Gyro Breakout will provide orientation and motion data. With an input voltage range of 2.3 - 3.4V, it will be powered by the Arduino Uno. The tri-axis angular rate sensor (gyro) and tri-axis accelerometer will measure rotational and linear motion, respectively. The sensor's programmable full-scale ranges and high sensitivity will allow for accurate motion tracking, essential for navigation and balance.
+The _MPU6050 Gyro Breakout_ will provide orientation and motion data. With an input voltage range of 2.3 - 3.4V, it will be powered by the Arduino Uno. The tri-axis angular rate sensor (gyro) and tri-axis accelerometer will measure rotational and linear motion, respectively. The sensor's programmable full-scale ranges and high sensitivity will allow for accurate motion tracking, essential for navigation and balance.
 
 **DFRobot Huskylens**
 
-The DFRobot Huskylens will serve as the vision system for the robot. Equipped with a Kendryte K210 processor and an OV2640 image sensor, it will capture and process images. The Huskylens can perform various vision-based tasks, such as object recognition, face detection, and line tracking. Operating at a supply voltage of 3.3~5.0V, it will be powered by the Arduino Uno or directly by the battery module. The vision data from Huskylens will be used to enhance the robot's autonomy, enabling it to interact with its environment more intelligently.
+The _DFRobot Huskylens_ will serve as the vision system for the robot. Equipped with a Kendryte K210 processor and an OV2640 image sensor, it will capture and process images. The Huskylens can perform various vision-based tasks, such as object recognition, face detection, and line tracking. Operating at a supply voltage of 3.3~5.0V, it will be powered by the Arduino Uno or directly by the battery module. The vision data from Huskylens will be used to enhance the robot's autonomy, enabling it to interact with its environment more intelligently.
 
 **DC-DC Buck Converter LM2596S**
 
-The DC-DC Buck Converter LM2596S is a highly efficient step-down voltage regulator designed to provide a stable output voltage from a higher input voltage. It can handle input voltages ranging from 4V to 35V and output voltages adjustable from 1.23V to 30V. The converter supports an input current of up to 3A and has a maximum power dissipation of 10 watts without a heatsink. The DC-DC Buck Converter will be used to regulate the voltage supplied to various components of the robot, ensuring that each part receives the appropriate voltage for optimal operation. Given the diverse voltage requirements of the robot's components, the converter will play a crucial role in maintaining system stability and efficiency.
+The _DC-DC Buck Converter LM2596S_ is a highly efficient step-down voltage regulator designed to provide a stable output voltage from a higher input voltage. It can handle input voltages ranging from 4V to 35V and output voltages adjustable from 1.23V to 30V. The converter supports an input current of up to 3A and has a maximum power dissipation of 10 watts without a heatsink. The DC-DC Buck Converter will be used to regulate the voltage supplied to various components of the robot, ensuring that each part receives the appropriate voltage for optimal operation. Given the diverse voltage requirements of the robot's components, the converter will play a crucial role in maintaining system stability and efficiency.
 
  
 
