@@ -97,6 +97,10 @@ Shown here is the block code in aisteam usede for the obstacle challenge.
 
 ## Specifications
 
+**Mobility Management**
+
+The 4-wheeled autonomous vehicle uses an Ordinary Motor Module for rear propulsion, driving the rear wheels through a gear system connected to a common axle. A Simulated Steering Gear Module at the front controls the steering by adjusting the angle of the front wheels. Power is provided by a Lithium Battery Module, regulated by a DC-DC Buck Converter, and managed by an Arduino Uno R3. This setup ensures smooth, coordinated movement and precise steering for autonomous navigation.
+
 
 
 This site was built using [GitHub Pages](https://pages.github.com/).
