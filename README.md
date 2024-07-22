@@ -101,6 +101,59 @@ Shown here is the block code in aisteam usede for the obstacle challenge.
 
 The 4-wheeled autonomous vehicle uses an Ordinary Motor Module for rear propulsion, driving the rear wheels through a gear system connected to a common axle. A Simulated Steering Gear Module at the front controls the steering by adjusting the angle of the front wheels. Power is provided by a Lithium Battery Module, regulated by a DC-DC Buck Converter, and managed by an Arduino Uno R3. This setup ensures smooth, coordinated movement and precise steering for autonomous navigation.
 
+**Power and Sense Management**
+
+The 4-wheeled autonomous vehicle is powered by a Lithium Battery Module, which provides a stable voltage of 7.4V and a capacity of 1100mAh. This battery ensures sufficient energy for the motors and electronic components, enabling extended operational time. The battery is connected to a DC-DC Buck Converter LM2596S, which regulates the voltage to appropriate levels for different components, such as 5V for sensors and 3.3V for specific modules.
+
+### Bill of Materials (BOM)
+
+1. Lithium Battery Module:
+  - Output Voltage: 7.4V
+
+  - Capacity: 1100mAh
+
+2. DC-DC Buck Converter LM2596S:
+
+- Input Voltage: 4V-35V
+ 
+- Output Voltage: Adjustable (1.23V to 30V)
+
+- Input Current: 3A (max)
+
+3. Ordinary Motor Modules:
+  
+- Voltage: 7.4V
+
+4. Simulated Steering Gear Module:
+  
+- Voltage: 5V
+
+- Torque: 1.5kgf.cm
+
+5. HC-SR04 Ultrasonic Sensor:
+  
+- Operating Voltage: 5V
+   
+- Current: 15mA
+
+6. MPU6050 Gyro Breakout:
+   
+- Input Voltage: 3.3V
+ 
+- Tri-Axis Gyro and Accelerometer
+ 
+7. DFRobot Huskylens:
+
+- Supply Voltage: 3.3V-5V
+
+9. Wires and Connectors:
+ 
+- For connecting battery, sensors, and motors to the Arduino and power sources.
+
+10. Mounting Hardware:
+
+- Brackets and mounts to secure components to the LEGO chassis.
+
 
 
 This site was built using [GitHub Pages](https://pages.github.com/).
