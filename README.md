@@ -84,8 +84,6 @@ The DFRobot Huskylens will serve as the vision system for the robot. Equipped wi
 
 The DC-DC Buck Converter LM2596S is a highly efficient step-down voltage regulator designed to provide a stable output voltage from a higher input voltage. It can handle input voltages ranging from 4V to 35V and output voltages adjustable from 1.23V to 30V. The converter supports an input current of up to 3A and has a maximum power dissipation of 10 watts without a heatsink. The DC-DC Buck Converter will be used to regulate the voltage supplied to various components of the robot, ensuring that each part receives the appropriate voltage for optimal operation. Given the diverse voltage requirements of the robot's components, the converter will play a crucial role in maintaining system stability and efficiency.
 
-
-
  
 
 
@@ -96,6 +94,8 @@ Shown here is the block code in aisteam usede for the obstacle challenge.
 
 ![Code](https://github.com/binksera/Chat-JeepneyT---WRO---Future-Engineers/blob/f956d6f74c6b82b01c7a1fdbffdf4c1f306f5505/src/AI%20Steam%20Code.png)
 
+
+## Specifications
 
 
 
