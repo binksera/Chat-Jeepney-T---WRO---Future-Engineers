@@ -28,7 +28,7 @@ _AIsteam and Arduino._
 
 **Funny Photo**
 
-**Youtube Video**
+**Performance Video**
 
 https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
@@ -48,57 +48,47 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 **Key Components of the Chat Jeepney T:**   
 
 
-**Connectors:**
+**Lego Chassis**
 
-Establish reliable electrical connections between the microcontroller and various electronic components/modules, ensuring efficient signal and power transmission.
+The Lego Chassis will serve as the robot's body, providing a sturdy and lightweight frame to house all other components. Its compatibility with LEGO construction systems makes it easy to assemble and modify. This chassis will support the motor modules, battery, Arduino board, sensors, and other electronics, ensuring that all parts are securely mounted and easily accessible for maintenance and upgrades.
 
-**Breadboard:**
+**Lithium Battery Module**
 
-Allows temporary construction of circuits without soldering, facilitating easy testing and modification of designs.
+The Lithium Battery Module will supply power to the entire robot. With an output voltage of 7.4V and a capacity of 1100mAh, it will provide a sufficient energy source for the motors and electronic components. The maximum discharge rate of 3C ensures that the battery can deliver high current when needed. The rated charging voltage of 8.4V and current of 1A allow for efficient recharging. The DC5.5 input and output ports facilitate easy connections, and multiple batteries can be connected in parallel to extend operating time.
 
-**Battery Holder:**
+**Ordinary Motor Module**
 
-Secures the battery in place, ensuring stable and consistent power supply to the robot.
+The Ordinary Motor Module will be used for driving the wheels of the robot. These motors, operating at 7.4V, will provide the necessary torque and speed to move the robot. The motors will be controlled by the Arduino Uno R3, which will send signals to adjust the speed and direction based on sensor inputs and pre-programmed instructions.
 
-**Ultrasonic Sensor:**
+**Simulated Steering Gear Module**
 
-Detects and measures the distance to obstacles by emitting ultrasonic waves and calculating their return time, helping the robot navigate safely.
+The Simulated Steering Gear Module will be used for steering and controlling the orientation of the robot. With a working voltage of 5V and a torque of 1.5kgf.cm, it will be capable of handling the physical demands of steering. The angle range of 0~180° and speed of 0.12 seconds/60° will provide precise and responsive control. Its compatibility with the LEGO construction system ensures easy integration with the Lego Chassis.
 
-**Sensor Shield:**
+**Arduino Uno R3**
 
-Simplifies the connection of multiple sensors to the microcontroller, providing labeled ports for secure and organized wiring.
+The Arduino Uno R3 will act as the central controller for the robot. It will interface with all sensors and actuators, processing input data and executing control algorithms. The Arduino will read data from the ultrasonic sensor, gyro breakout, and Huskylens, and use this information to make real-time decisions about navigation, obstacle avoidance, and movement.
 
-**Servo Motor:**
+**HC-SR04 Ultrasonic Sensor**
 
-Controls the steering mechanism for precise adjustments to the front wheels' angle, enabling accurate directional changes.
+The HC-SR04 Ultrasonic Sensor will be used for distance measurement and obstacle detection. Operating at 5V DC and consuming 15mA, it emits ultrasonic waves and measures the time it takes for the echo to return. With a range of 2cm to 400cm and an accuracy of 3mm, it will provide precise distance measurements, allowing the robot to detect and avoid obstacles. The measuring angle of <15° ensures a focused detection area, and the sensor's dimensions (45 x 20 x 15mm) make it easy to mount on the Lego Chassis.
 
-**DC Motor:**
+**MPU6050 Gyro Breakout**
 
-Drives the rear wheels, providing necessary torque and speed for the robot's movement.
+The MPU6050 Gyro Breakout will provide orientation and motion data. With an input voltage range of 2.3 - 3.4V, it will be powered by the Arduino Uno. The tri-axis angular rate sensor (gyro) and tri-axis accelerometer will measure rotational and linear motion, respectively. The sensor's programmable full-scale ranges and high sensitivity will allow for accurate motion tracking, essential for navigation and balance.
 
-**Motor Driver:**
+**DFRobot Huskylens**
 
-Manages the DC motors' speed and direction, ensuring efficient and accurate response to the microcontroller's commands.
+The DFRobot Huskylens will serve as the vision system for the robot. Equipped with a Kendryte K210 processor and an OV2640 image sensor, it will capture and process images. The Huskylens can perform various vision-based tasks, such as object recognition, face detection, and line tracking. Operating at a supply voltage of 3.3~5.0V, it will be powered by the Arduino Uno or directly by the battery module. The vision data from Huskylens will be used to enhance the robot's autonomy, enabling it to interact with its environment more intelligently.
 
-**IR Sensors:**
+**DC-DC Buck Converter LM2596S**
 
-Detect specific colors on the mat by measuring reflected infrared light, allowing the robot to identify and respond to red and green obstacles.
+The DC-DC Buck Converter LM2596S is a highly efficient step-down voltage regulator designed to provide a stable output voltage from a higher input voltage. It can handle input voltages ranging from 4V to 35V and output voltages adjustable from 1.23V to 30V. The converter supports an input current of up to 3A and has a maximum power dissipation of 10 watts without a heatsink. The DC-DC Buck Converter will be used to regulate the voltage supplied to various components of the robot, ensuring that each part receives the appropriate voltage for optimal operation. Given the diverse voltage requirements of the robot's components, the converter will play a crucial role in maintaining system stability and efficiency.
 
-**Buck Converter:**
 
-Steps down the voltage from the battery to suitable levels for the microcontroller and other components, ensuring proper power distribution.
 
-**Wheels:**
+ 
 
-Enable the robot's movement, driven by the DC motors and steered by the servo motor.
 
-**Acrylic Chassis:**
-
-Provides a sturdy and lightweight frame to hold all the components together securely.
-
-**Battery:**
-
-Supplies power to all the robot’s components, ensuring consistent operation.
 
 **Code**
 
