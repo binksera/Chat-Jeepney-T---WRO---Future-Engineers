@@ -159,6 +159,8 @@ The 4-wheeled autonomous vehicle is powered by a Lithium Battery Module, which p
 
 The strategy for obstacle management involves using a combination of sensors and algorithms to navigate and overcome obstacles. The vehicle utilizes the HC-SR04 Ultrasonic Sensor for distance measurement, the MPU6050 Gyro Breakout for orientation and balance, and the DFRobot Huskylens for advanced object recognition. 
 
+![Flow Diagram](https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/e364056f1a4e25a34d3993ab16fcc1f94b7283ee/other/Flow%20Diagram.png)
+
 
 
 
