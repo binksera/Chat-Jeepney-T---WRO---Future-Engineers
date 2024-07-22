@@ -15,7 +15,7 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
 ## Introduction
 
-_AIsteam and Arduino._
+This project introduces a versatile and innovative autonomous 4-wheeled robot, combining elements from AISTEAM, LEGO, and Arduino ecosystems. Designed to provide a practical platform for exploring robotics, automation, and intelligent systems, this robot integrates modular components to deliver a robust and customizable solution.
 
 ### Team Details
 - **Coder:** Jacob Acuna
