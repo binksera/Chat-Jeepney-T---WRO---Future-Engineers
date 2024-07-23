@@ -161,7 +161,7 @@ The strategy for obstacle management involves using a combination of sensors and
 
 ![Flow Diagram](https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/e364056f1a4e25a34d3993ab16fcc1f94b7283ee/other/Flow%20Diagram.png)
 
-## Pseudocode
+### Pseudocode
 
 ```plaintext
 Initialize sensors
@@ -190,8 +190,6 @@ While True:
 
 End
 
-
-
-
+```
 
 This site was built using [GitHub Pages](https://pages.github.com/).
