@@ -161,6 +161,34 @@ The strategy for obstacle management involves using a combination of sensors and
 
 ![Flow Diagram](https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/e364056f1a4e25a34d3993ab16fcc1f94b7283ee/other/Flow%20Diagram.png)
 
+## Pseudocode
+
+Initialize sensors
+Initialize motors
+
+While True:
+    distance = Read_HC_SR04()
+    if distance < obstacle_threshold:
+        direction = Determine_Clear_Path()
+        if direction == 'left':
+            Turn_Left()
+        elif direction == 'right':
+            Turn_Right()
+        else:
+            Reverse()
+            Recalculate_Path()
+    else:
+        Move_Forward()
+
+    object = Recognize_Object()
+    if object is not None:
+        Handle_Object(object)
+
+    balance = Read_MPU6050()
+    Adjust_Balance(balance)
+
+End
+
 
 
 
