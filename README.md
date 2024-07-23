@@ -163,6 +163,7 @@ The strategy for obstacle management involves using a combination of sensors and
 
 ## Pseudocode
 
+```plaintext
 Initialize sensors
 Initialize motors
 
@@ -188,6 +189,7 @@ While True:
     Adjust_Balance(balance)
 
 End
+
 
 
 
