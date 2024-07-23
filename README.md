@@ -99,11 +99,11 @@ Shown here is the block code in aisteam usede for the obstacle challenge.
 
 **Mobility Management**
 
-The 4-wheeled autonomous vehicle uses an Ordinary Motor Module for rear propulsion, driving the rear wheels through a gear system connected to a common axle. A Simulated Steering Gear Module at the front controls the steering by adjusting the angle of the front wheels. Power is provided by a Lithium Battery Module, regulated by a DC-DC Buck Converter, and managed by an Arduino Uno R3. This setup ensures smooth, coordinated movement and precise steering for autonomous navigation.
+The Chat Jeepney-T uses an Ordinary Motor Module for rear propulsion, driving the rear wheels through a gear system connected to a common axle. A Simulated Steering Gear Module at the front controls the steering by adjusting the angle of the front wheels. Power is provided by a Lithium Battery Module, regulated by a DC-DC Buck Converter, and managed by an Arduino Uno R3. This setup ensures smooth, coordinated movement and precise steering for autonomous navigation.
 
 **Power and Sense Management**
 
-The 4-wheeled autonomous vehicle is powered by a Lithium Battery Module, which provides a stable voltage of 7.4V and a capacity of 1100mAh. This battery ensures sufficient energy for the motors and electronic components, enabling extended operational time. The battery is connected to a DC-DC Buck Converter LM2596S, which regulates the voltage to appropriate levels for different components, such as 5V for sensors and 3.3V for specific modules.
+The Chat Jeepney-T is powered by a Lithium Battery Module, which provides a stable voltage of 7.4V and a capacity of 1100mAh. This battery ensures sufficient energy for the motors and electronic components, enabling extended operational time. The battery is connected to a DC-DC Buck Converter LM2596S, which regulates the voltage to appropriate levels for different components, such as 5V for sensors and 3.3V for specific modules.
 
 ### Bill of Materials (BOM)
 
