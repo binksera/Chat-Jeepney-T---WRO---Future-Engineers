@@ -28,9 +28,13 @@ This project introduces a versatile and innovative autonomous 4-wheeled robot, c
 
 **Funny Photo**
 
-**Performance Video**
+### Performance Videos
+
+_Draft_
 
 https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
+
+_Final_
 
 ## Robot Design
 
