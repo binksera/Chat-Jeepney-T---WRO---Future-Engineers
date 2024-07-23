@@ -36,7 +36,7 @@ https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
 **3D Model**
 
-![3D Model](https://github.com/binksera/Chat-JeepneyT---WRO---Future-Engineers/blob/d812ea15e94702fd0156b1bdf8a4ae3c3b360e42/v-photos/3D%20Model.png)
+![3D Model](https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/d74eae4098c1b3a38d5d914505276439cd8a65ba/v-photos/Final%20Vehicle/3D%20Models/3D%20Model%20(1).png)
 
 **Physical Model**
 
