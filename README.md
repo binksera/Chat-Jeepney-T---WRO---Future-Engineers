@@ -90,7 +90,7 @@ The _DC-DC Buck Converter LM2596S_ is a highly efficient step-down voltage regul
 
 **Code**
 
-Shown here is the block code in aisteam used for the obstacle challenge.
+Shown here is the c++ code used for the obstacle challenge.
 
 ![Code](https://github.com/binksera/Chat-JeepneyT---WRO---Future-Engineers/blob/f956d6f74c6b82b01c7a1fdbffdf4c1f306f5505/src/AI%20Steam%20Code.png)
 
