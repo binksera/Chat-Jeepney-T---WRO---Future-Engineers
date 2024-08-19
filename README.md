@@ -91,7 +91,7 @@ Shown here is the pdf step-by-step instruction manual of the whole robot in its 
 https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/7bedd412f83b395a592883aeea0f45b121cd99ca/other/Instruction%20Manual.pdf
 
 
-**Code**
+## Code
 
 Shown here is the pseudocode on the first commit of the AISteam.
 
