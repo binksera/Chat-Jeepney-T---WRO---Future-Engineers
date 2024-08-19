@@ -1,4 +1,4 @@
-CHAT JEEPNEY T
+CHAT JEEPNEY-T
 ===
 
 This repository contains engineering materials of the Chat Jeepney-T vehicle participating in the WRO Future Engineers competition in the season 2024.
