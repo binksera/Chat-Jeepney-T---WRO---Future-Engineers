@@ -1,7 +1,7 @@
-Engineering materials
-====
+CHAT JEEPNEY T
+===
 
-This repository contains engineering materials of a self-driven vehicle's model participating in the WRO Future Engineers competition in the season 2024.
+This repository contains engineering materials of the Chat Jeepney-T vehicle participating in the WRO Future Engineers competition in the season 2024.
 
 
 ## Introduction
