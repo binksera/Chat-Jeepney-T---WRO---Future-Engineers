@@ -86,7 +86,7 @@ The _DC-DC Buck Converter LM2596S_ is a highly efficient step-down voltage regul
 
 ## Instruction Manual
 
-Shown here is the instruction manual of the whole robot in its final form.
+Shown here is the pdf step-by-step instruction manual of the whole robot in its final form.
 
 https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/7bedd412f83b395a592883aeea0f45b121cd99ca/other/Instruction%20Manual.pdf
 
