@@ -27,11 +27,10 @@ This project introduces a versatile and innovative autonomous 4-wheeled robot, c
 
 ### Performance Videos
 
-_Draft_
+_Final_
 
 https://youtu.be/T9l6r4ce5zs?si=HzVgMUuBB9jVTb4s
 
-_Final_
 
 ## Robot Design
 
@@ -204,5 +203,8 @@ While True:
 End
 
 ```
+
+
+Thank You!
 
 This site was built using [GitHub Pages](https://pages.github.com/).
