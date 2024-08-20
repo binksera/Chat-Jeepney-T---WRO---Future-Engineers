@@ -107,6 +107,177 @@ Shown here is the c++ code used for the challenges.
 
 https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/e6aa2a4aef65a467d4792f19b1ba87c189c272d9/src/First%20Commit/Basic%20Movements.ino
 
+'''plaintext
+
+void setup() {
+    Serial.begin(115200);
+    Wire.begin();
+    
+    // Sensor setup
+    pinMode(trigPin1, OUTPUT);
+    pinMode(echoPin1, INPUT);
+    pinMode(trigPin2, OUTPUT);
+    pinMode(echoPin2, INPUT);
+    myservo.attach(10); // Attaches the servo on pin 10 to the servo object
+
+    while (!huskylens.begin(Wire)) {
+        Serial.println(F("Begin failed!"));
+        Serial.println(F("1. Please recheck the \"Protocol Type\" in HUSKYLENS (General Settings >> Protocol Type >> I2C)"));
+        Serial.println(F("2. Please recheck the connection."));
+        delay(100);
+    }
+    
+    huskylens.writeAlgorithm(ALGORITHM_COLOR_RECOGNITION); // Using color recognition algorithm
+    
+
+void loop() {
+    if (huskylens.requestBlocks()) {
+        bool foundCurrentID = false; // Flag to check if the current prioritized ID is still visible
+
+        for (int i = 0; i < huskylens.countBlocks(); i++) {
+            HUSKYLENSResult result = huskylens.getBlock(i);
+
+            // If there is no priority, check both IDs
+            if (currentPriorityID == 0) {
+                if (result.ID == ID1 && (result.width * result.height) > pixelThreshold) {
+                    currentPriorityID = ID1; // Set priority to ID1
+                    Serial.println("Prioritizing ID1.");
+                } else if (result.ID == ID2 && (result.width * result.height) > pixelThreshold) {
+                    currentPriorityID = ID2; // Set priority to ID2
+                    Serial.println("Prioritizing ID2.");
+                }
+            }
+
+            // If we are prioritizing ID1
+            if (currentPriorityID == ID1 && result.ID == ID1) {
+                foundCurrentID = true;
+                
+                int xCenterID1 = result.xCenter;
+                int yCenterID1 = result.yCenter;
+                int centerMinID1 = 100;
+                int centerMaxID1 = 220;
+                int xThresholdID1 = 100;
+
+                if (result.width > xThresholdID1 && A == 0) {
+                    stopMotor();
+                    moveBackward(255);
+                    delay(1000);
+                    turnLeft(255);
+                    delay(200);
+                    turnRight(255);
+                    delay(100);
+                    moveForward(255);
+                    delay(200);
+                    stopMotor();
+                    Serial.println("ID1 exceeds x threshold, stopping.");
+                    disableUltrasonic = true; // Disable ultrasonic alignment
+                } else if (xCenterID1 < centerMinID1) {
+                    Serial.println("ID1 is left of center, turning left.");
+                    turnLeft(95);
+                } else if (xCenterID1 > centerMaxID1) {
+                    Serial.println("ID1 is right of center, turning right.");
+                    turnRight(95);
+                } else {
+                    Serial.println("ID1 is centered, moving forward.");
+                    moveForward(50);
+                }
+
+                break; // Stop checking other blocks after ID1 is found
+            }
+
+            // If we are prioritizing ID2
+            if (currentPriorityID == ID2 && result.ID == ID2) {
+                foundCurrentID = true;
+                
+                int xCenterID2 = result.xCenter;
+                int yCenterID2 = result.yCenter;
+                int centerMinID2 = 140;
+                int centerMaxID2 = 180;
+                int xThresholdID2 = 50;
+
+                if (result.width > xThresholdID2) {
+                    stopMotor();
+                    Serial.println("ID2 exceeds x threshold, stopping.");
+                } else if (xCenterID2 < centerMinID2) {
+                    Serial.println("ID2 is left of center, turning left.");
+                    turnLeft(95);
+                } else if (xCenterID2 > centerMaxID2) {
+                    Serial.println("ID2 is right of center, turning right.");
+                    turnRight(95);
+                } else {
+                    Serial.println("ID2 is centered, moving forward.");
+                    moveForward(30);
+                }
+
+                break; // Stop checking other blocks after ID2 is found
+            }
+        }
+
+        // If the prioritized ID is no longer found, reset the priority
+        if (!foundCurrentID) {
+            currentPriorityID = 0; // Reset priority when neither ID is detected
+            
+            if (!disableUltrasonic) { // Only execute ultrasonic code if not disabled
+                // Ultrasonic Sensor 1
+                digitalWrite(trigPin1, LOW);
+                delayMicroseconds(2);
+                digitalWrite(trigPin1, HIGH);
+                delayMicroseconds(10);
+                digitalWrite(trigPin1, LOW);
+                duration1 = pulseIn(echoPin1, HIGH);
+                distance1 = duration1 * 0.034 / 2;
+
+                if (distance1 <= 100 && abs(distance1 - previousDistance1) <= 5) {
+                    Serial.print("Distance Sensor 1: ");
+                    Serial.print(distance1);
+                    Serial.println(" cm");
+                }
+
+                previousDistance1 = distance1;
+
+                // Ultrasonic Sensor 2
+                digitalWrite(trigPin2, LOW);
+                delayMicroseconds(2);
+                digitalWrite(trigPin2, HIGH);
+                delayMicroseconds(10);
+                digitalWrite(trigPin2, LOW);
+                duration2 = pulseIn(echoPin2, HIGH);
+                distance2 = duration2 * 0.034 / 2;
+
+                if (distance2 <= 100 && abs(distance2 - previousDistance2) <= 5) {
+                    Serial.print("Distance Sensor 2: ");
+                    Serial.print(distance2);
+                    Serial.println(" cm");
+                }
+
+                previousDistance2 = distance2;
+
+                Serial.println("No threshold crossed. Moving forward.");
+                
+                // Simple obstacle avoidance logic
+                if (distance1 < 30) {
+                    turnLeft(100);
+                }
+                if (distance2 < 30) {
+                    turnRight(100);
+                } else {
+                    moveForward(50);
+                    delay(90);
+                    turnLeft(100);
+                    delay(13);
+                }
+            } else {
+                // Reset the flag to re-enable ultrasonic alignment in the next loop iteration
+                disableUltrasonic = false;
+            }
+
+            delay(1); // Adjusted delay for better responsiveness
+        }
+    } else {
+        Serial.println("Fail to request objects from Huskylens!");
+    }
+
+
 ## Specifications
 
 **Mobility Management**
