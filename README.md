@@ -15,12 +15,15 @@ This project introduces a versatile and innovative autonomous 4-wheeled robot, c
 
 ### Team Photo
 
-**Official Photo**
-
 
 **Funny Photo**
 
 ![Funny Photo](https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/54a7ceabe2b6a60f85a8f6fbc39beb93da9a0709/t-photos/Funny%20Photo.png)
+
+**Official Photo**
+
+![Funny Photo](https://github.com/binksera/Chat-Jeepney-T---WRO---Future-Engineers/blob/fab026e74473fdd2db09cd6ea2236d374b63771c/t-photos/Official%20Photo.jpg)
+
 
 ### Performance Videos
 
